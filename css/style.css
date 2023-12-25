@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+:root {
+  --primary: #353334;
+  --btncolor: #4a4aea;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+/* nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: var(--primary);
+  position: sticky;
+  top: 0;
+}
+nav a {
+  font-size: 40px;
+  color: white;
+}
+nav div {
+  width: 30%;
+  display: flex;
+}
+nav div input {
+  padding: 5px 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  width: 100%;
+}
+nav div button {
+  padding: 10px 40px;
+  border-radius: 0 5px 5px 0;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: var(--btncolor);
+  color: white;
+}
+nav span {
+  font-size: 20px;
+  color: white;
+}
+/* end nav */
+/* seaction */
+.banner {
+  background-image: linear-gradient(to right, #0009, #0009),
+    url(../img/background.jpg);
+  background-size: cover;
+  background-position: 0 77%;
+  background-repeat: no-repeat;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 80px;
+}
+.banner div {
+  width: 40%;
+  /* margin-left: -50px; */
+}
+.banner div h1 {
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+  font-weight: 200;
+}
+.banner .form-group {
+  width: 100%;
+  display: flex;
+}
+.banner .form-group input {
+  width: 100%;
+  padding: 15px 5px;
+  outline: none;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 20px;
+}
+.banner .form-group button {
+  padding: 10px 30px;
+  font-size: 20px;
+  color: white;
+  background-color: var(--btncolor);
+  outline: none;
+  border: none;
+  border-radius: 0 5px 5px 0;
+}
+.message {
+  color: red;
+  padding: 5px 0;
+  font-size: 15px;
+}
+/* end of seaction */
+/* task section */
+section {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+section .task {
+  width: 30%;
+}
+section .task > h1 {
+  padding: 20px 0;
+  text-align: center;
+}
+section .task-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(59, 59, 59);
+  padding: 10px;
+  color: white;
+  border-radius: 2px;
+  margin: 10px 0;
+}
+section .task-body .task-title {
+  display: flex;
+  align-items: center;
+}
+section .task-body .task-title i {
+  padding-inline-end: 10px;
+  color: gray;
+  font-size: 20px;
+  cursor: pointer;
+}
+section .task-body .task-title h1.deactive {
+  text-decoration: line-through;
+  color: gray;
+}
+section .task-body .task-title i.deactive {
+  color: var(--btncolor);
+}
+section .task-body button {
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* end of task seaction */
